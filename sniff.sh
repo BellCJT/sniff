@@ -1,6 +1,7 @@
 #!/bin/bash
-#MITM script v1.0 
-#author Luka Pusic <pusic93@gmail.com> http://360percents.com
+#MITM script v1.0 beta
+#author Luka Pusic <pusic93@gmail.com>
+#http://360percents.com/posts/automatic-mitm-shell-script/
 #original scripts found on backtrack-linux.org by killadninja and tedbear
 
 IFACES=`ifconfig | grep '  $' | cut -d " " -f1`
