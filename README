@@ -1,42 +1,37 @@
-****************** README ******************
+=== Automatic MITM script v1.0 beta ===
 
-README DATE: Nov 2 2011
-AUTHOR: Luka Pusic <pusic93@gmail.com>
-WWW: http://360percents.com/posts/automatic-mitm-shell-script/
+Readme date: Nov 2 2011
+Author: Luka Pusic <pusic93@gmail.com>
+URI: http://360percents.com/posts/automatic-mitm-shell-script/
+Github: https://github.com/lukapusic/isniff
 
-LINCESE
+== Description ==
+Automatic MITM (arp poisoning) shell script that features tools like sslstrip,
+dsniff and ettercap. The script collects all packets, including SSL traffic
+collected with sslstrip and logs all the URLs using uslsnarf from dsniff collection.
+You are welcome to submit bugs, feature requests and improvements.
+
+== System requirements ==
+* unix like system
+* sslstrip
+* dsniff
+* ettercap
+* iptables
+
+== Instructions ==
+1. apply permissions: chmod +x ./isniff.sh
+2. the script must be run as root
+
+== Changelog ==
+*
+
+== Known issues ==
+* arp poisoning may cause overloads on large networks
+
+License
 * ----------------------------------------------------------------------------
 * "THE BEER-WARE LICENSE" (Revision 42):
 * <pusic93@gmail.com> wrote this file. As long as you retain this notice you
 * can do whatever you want with this stuff. If we meet some day, and you think
 * this stuff is worth it, you can buy me a beer in return. Luka Pusic
 * ----------------------------------------------------------------------------
-
-Automatic MITM script v1.0 beta
-
-Automatic MITM (arp poisoning) shell script that features tools like sslstrip,
-dsniff and ettercap. The script collects all packets, including SSL traffic
-collected with sslstrip and logs all the URLs using uslsnarf from dsniff collection.
-You are welcome to submit bugs, feature requests and improvements.
-
-SYSTEM PREREQUISITES
--unix like system
--sslstrip
--dsniff
--ettercap
--iptables
-
-INSTRUCTIONS
--apply permissions: chmod +x ./sniff.sh
--the script must be run as root
-
-NEW FEATURES
--
-
-BUG FIXES
--
-
-KNOWN ISSUES
--arp poisoning may cause overloads on large networks
-
-********************************************
