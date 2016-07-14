@@ -1,8 +1,7 @@
 === Automatic MITM script v1.0 beta ===
 
 Readme date: Nov 2 2011
-Author: Luka Pusic <pusic93@gmail.com>
-URI: http://360percents.com/posts/automatic-mitm-shell-script/
+Author: Luka Pusic <luka@pusic.com>
 Github: https://github.com/lukapusic/isniff
 
 == Description ==
@@ -31,7 +30,7 @@ You are welcome to submit bugs, feature requests and improvements.
 License
 * ----------------------------------------------------------------------------
 * "THE BEER-WARE LICENSE" (Revision 42):
-* <pusic93@gmail.com> wrote this file. As long as you retain this notice you
+* <luka@pusic.com> wrote this file. As long as you retain this notice you
 * can do whatever you want with this stuff. If we meet some day, and you think
 * this stuff is worth it, you can buy me a beer in return. Luka Pusic
 * ----------------------------------------------------------------------------
